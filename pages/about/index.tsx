@@ -35,17 +35,6 @@ export const InpageContent = ({printPreview,printView}:{printPreview:boolean,pri
         </div>
         </div>
 
-
-
-        <div onClick={()=>printView()}>
-            <button className="fixed grid w-10 h-10 rounded shadow-none justify-items-center bottom-20 right-8 bg-gradient-to-r from-green-400 to-blue-400 hover:from-red-400 hover:to-yellow-500">
-            <div className="flex items-center justify-around w-full h-full align-middle">
-            <a className="text-white">
-                <Printer printPreview={printPreview}/>
-            </a>
-            </div>
-            </button>
-        </div>
         <div className={printPreview ?  "invisible" :  "visible"}>
             <button className="fixed grid w-10 h-10 rounded shadow-none justify-items-center bottom-32 right-8 bg-gradient-to-r from-green-400 to-blue-400 hover:from-red-400 hover:to-yellow-500">
             <div className="flex items-center justify-around w-full h-full align-middle">
@@ -57,6 +46,17 @@ export const InpageContent = ({printPreview,printView}:{printPreview:boolean,pri
             </div>
             </button>
         </div>
+
+        <div onClick={()=>printView()}>
+            <button className="fixed grid w-10 h-10 rounded shadow-none justify-items-center bottom-20 right-8 bg-gradient-to-r from-green-400 to-blue-400 hover:from-red-400 hover:to-yellow-500">
+            <div className="flex items-center justify-around w-full h-full align-middle">
+            <a className="text-white">
+                <Printer printPreview={printPreview}/>
+            </a>
+            </div>
+            </button>
+        </div>
+
     </div>
     )
 }

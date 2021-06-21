@@ -8,7 +8,7 @@ type MediaProps = {
 const MediaItem = ({url,icon}:MediaProps) => {
     return (
         <div className="p-2 rounded-md hover:bg-gray-300">
-            <a target="_blank" href={url}><img className="w-8 h-8" src={`/img/media/${icon}.svg`} alt={icon}/></a>
+            <a target="_blank" rel="noreferrer" href={url}><img className="w-8 h-8" src={`/img/media/${icon}.svg`} alt={icon}/></a>
         </div>
     )
 }

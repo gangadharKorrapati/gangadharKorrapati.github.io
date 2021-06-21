@@ -7,7 +7,7 @@ type navProps = {
   }
 const NavItem = ({name,path}:navProps) => {
     return (
-        <span className="font-mono text-blue-400 uppercase hover:underline hover:text-blue-500">
+        <span className="font-mono text-blue-500 uppercase hover:underline hover:text-blue-600">
         <Link href={path}>{name}</Link>
         </span>
 
