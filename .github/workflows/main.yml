@@ -5,15 +5,15 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./src
+        working-directory: ./
 
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v2
         with:
           persist-credentials: false
 
-      - name: Cache  💾
+      - name: Cache
         uses: actions/cache@v2
         with:
           path: ${{ github.workspace }}/.next/cache
@@ -26,7 +26,7 @@ jobs:
         env:
             CI: true
 
-      - name: Deploy 🚀
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
