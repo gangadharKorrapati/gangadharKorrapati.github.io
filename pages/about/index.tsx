@@ -38,7 +38,7 @@ export const InpageContent = ({printPreview,printView}:{printPreview:boolean,pri
 
 
         <div onClick={()=>printView()}>
-            <button className="fixed grid w-10 h-10 rounded shadow-none justify-items-center bottom-8 right-8 bg-gradient-to-r from-green-400 to-blue-400 hover:from-red-400 hover:to-yellow-500">
+            <button className="fixed grid w-10 h-10 rounded shadow-none justify-items-center bottom-20 right-8 bg-gradient-to-r from-green-400 to-blue-400 hover:from-red-400 hover:to-yellow-500">
             <div className="flex items-center justify-around w-full h-full align-middle">
             <a className="text-white">
                 <Printer printPreview={printPreview}/>
@@ -47,7 +47,7 @@ export const InpageContent = ({printPreview,printView}:{printPreview:boolean,pri
             </button>
         </div>
         <div className={printPreview ?  "invisible" :  "visible"}>
-            <button className="fixed grid w-10 h-10 rounded shadow-none justify-items-center bottom-20 right-8 bg-gradient-to-r from-green-400 to-blue-400 hover:from-red-400 hover:to-yellow-500">
+            <button className="fixed grid w-10 h-10 rounded shadow-none justify-items-center bottom-32 right-8 bg-gradient-to-r from-green-400 to-blue-400 hover:from-red-400 hover:to-yellow-500">
             <div className="flex items-center justify-around w-full h-full align-middle">
             <a href={userinfo.resume} download>           
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
