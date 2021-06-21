@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.alink {
+    @apply text-blue-400 hover:text-blue-500 hover:underline;
+  }
+
+  .bkpi {
+    @apply font-medium text-gray-600;
+  }
+.lidec{
+    @apply pb-2 pl-6 list-disc;
+}
+
+.sep{
+    @apply pb-6 border-t-4 border-gray-600;
+}
+.chead{
+    @apply pb-2 text-xl uppercase;
+}

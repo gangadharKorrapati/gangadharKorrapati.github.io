@@ -1,15 +1,15 @@
 import Education from "./Education"
-import Experiance from "./Experiance"
-import Nameplate from "./nameplate"
+import Experience from "./Experience"
+import Nameplate from "./Nameplate"
 import Skills from "./Skills"
-const Resume = () => {
+const Resume = ({userinfo,skills}) => {
 
     return (
         <>    
-            <Nameplate/>
-            <Experiance/>
+            <Nameplate userinfo={userinfo}/>
+            <Experience/>
             <Education/>
-            <Skills/>
+            <Skills skills={skills}/>
         </>
     )
 }

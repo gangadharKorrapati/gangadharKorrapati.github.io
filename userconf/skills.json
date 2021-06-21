@@ -1,0 +1,52 @@
+[
+    {
+      "type": "Programming Languages",
+      "keywords": [
+        "JavaScript & TypeScript",
+        "Java",
+        "Python"
+      ]
+    },
+    {
+      "type": "Databases",
+      "keywords": [
+        "PostgreSQL",
+        "Redis"
+      ]
+    },
+    {
+      "type": "Data analysis",
+      "keywords": [
+        "pandas",
+        "SciPy & Numpy",
+        "Apache Zeppelin & Pyspark",
+        "Jupyte notebook & Matplotlib"
+      ]
+    },
+    {
+      "type": "Web and REST API Frameworks",
+      "keywords": [
+        "Nodejs & Express.js",
+        "Django & Flask",
+        "Spring boot",
+        "OpenAPI & Swagger"
+      ]
+    },
+    {
+      "type": "DevOps",
+      "keywords": [
+        "Git & Github",
+        "Nginx",
+        "Docker",
+        "Jenkins"
+      ]
+    },
+    {
+      "type": "Cloud",
+      "keywords": [
+        "AWS",
+        "Digital Ocean",
+        "Heroku"
+      ]
+    }
+  ]

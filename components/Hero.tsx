@@ -5,7 +5,7 @@ const Hero = () => {
 
     const router = useRouter()
     
-    const handleClick = (e, path) => {
+    const handleClick = (e:React.MouseEvent, path:string) => {
         e.preventDefault()
         router.push(path)
     }
