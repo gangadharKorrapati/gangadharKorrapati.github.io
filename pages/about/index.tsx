@@ -48,11 +48,11 @@ export const InpageContent = ({printPreview,printView}:{printPreview:boolean,pri
         </div>
 
         <div onClick={()=>printView()}>
-            <button className="fixed grid w-10 h-10 rounded shadow-none justify-items-center bottom-20 right-8 bg-gradient-to-r from-green-400 to-blue-400 hover:from-red-400 hover:to-yellow-500">
+            <button className="fixed grid w-10 h-10 rounded shadow-none justify-items-center bottom-20 right-8 bg-gradient-to-r from-green-400 to-blue-400 hover:from-red-400 hover:to-yellow-500" >
             <div className="flex items-center justify-around w-full h-full align-middle">
-            <a className="text-white">
+            <span className="text-white">
                 <Printer printPreview={printPreview}/>
-            </a>
+            </span>
             </div>
             </button>
         </div>
@@ -67,15 +67,23 @@ export const Printer = ({printPreview}:{printPreview:boolean}) => {
     if(!printPreview){
     {/*Printer icon */}
     return (
+        <>
         <svg xmlns="http://www.w3.org/2000/svg"  className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
         </svg>
+        <span className="hidden">Print Preview</span>
+        </>
+
     )}
     else {
     {/*X icon */}
         return (
+        <>
         <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
         </svg>
+        <span className="hidden">Close Preview</span>
+        </>
+
     )}
 }
