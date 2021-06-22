@@ -31,9 +31,10 @@ const Experience = () => {
                                     Of several proposed Only solution that got approved by FCA infosec team for mainframe and Cloud communication. </li>
                                 <li>Migrated legacy system users from salesforce IAM to AWS IAM with GDPR compliance.</li>
                             </ul> 
-                            
-                        <a target="_blank" href="/tcs.pdf" className="alink">Service Certificate</a>
-                        
+                            <div>
+
+                                <a target="_blank" href="/tcs.pdf" className="alink">Service Certificate</a>
+                            </div>
                     </ContextItem>
                     
                     <ContextItem title="Intern" location="DevOps, TCS Synergy Park (Hyderabad)" duration="Jan 2019 - Apr 2019">
@@ -45,8 +46,9 @@ const Experience = () => {
                             <li>dockerized builds for several TCS internal data Science tools</li>
                             <li>developed scripts for jenkins CI/CD pipelines to deploy dockerized solutions to Amazon Elastic Container Registry</li>
                         </ul> 
-                        <a target="_blank" href="/intern.pdf" className="alink">Internship Certificate</a>
-
+                        <div>
+                            <a target="_blank" href="/intern.pdf" className="alink">Internship Certificate</a>
+                        </div>
                     </ContextItem>                            
                     
                 </Context>
