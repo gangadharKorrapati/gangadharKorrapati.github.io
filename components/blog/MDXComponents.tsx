@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 import ProsCard from './ProsCard';
 import ConsCard from './ConsCard';
@@ -21,7 +20,6 @@ const CustomLink = (props) => {
 };
 
 const MDXComponents = {
-  Image,
   a: CustomLink,
   ConsCard,
   ProsCard,

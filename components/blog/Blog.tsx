@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { parseISO, format } from 'date-fns';
 import PageContent from '../PageContent';
 import info from "../../metaconf/info.json"
@@ -18,7 +17,7 @@ export default function BlogLayout({ children, frontMatter }){
         </h1>
         <div className="flex flex-col items-start justify-between w-full mt-2 md:flex-row md:items-center">
           <div className="flex items-center">
-            <Image
+            <img
               alt={info.yourname}
               height={24}
               width={24}
