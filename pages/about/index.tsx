@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState,useEffect } from "react"
 import PageContent from "../../components/PageContent"
 import Resume from "../../components/resume/Resume"
 import userinfo from "../../userconf/userinfo.json"
@@ -10,6 +10,12 @@ const index = () => {
     const printView = () => {
         setPrintPreview(!printPreview)
     }
+
+    useEffect(() => { 
+        if(printPreview){
+            window.print()
+        }  
+    });
 
     if(printPreview){
         return (
