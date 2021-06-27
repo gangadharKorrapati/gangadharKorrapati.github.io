@@ -12,9 +12,9 @@ const index = () => {
     }
 
     useEffect(() => { 
+        window.onafterprint = printView
         if(printPreview){
             window.print()
-            window.onafterprint = printView
         }  
     });
 
