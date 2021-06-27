@@ -14,6 +14,7 @@ const index = () => {
     useEffect(() => { 
         if(printPreview){
             window.print()
+            window.onafterprint = printView
         }  
     });
 
