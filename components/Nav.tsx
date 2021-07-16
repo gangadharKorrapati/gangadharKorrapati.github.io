@@ -16,7 +16,7 @@ const NavItem = ({name,path}:navProps) => {
 
 const Nav = () => {
     return (
-        <div className="flex flex-row items-baseline px-4 space-x-4 justify-self-start">
+        <div className="flex flex-row items-baseline px-4 space-x-4 justify-self-end">
            {navItems.map((nav)=>{
                 return <NavItem name={nav.name} key={nav.path} path={nav.path}/>
             })}

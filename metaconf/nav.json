@@ -1,7 +1,7 @@
 [
     {"name":"home", "path":"/" },
     {"name":"about", "path":"/about" },
-    {"name":"code", "path":"/code" },
-    {"name":"blog", "path":"/blog" }
+    {"name":"blog", "path":"/blog" },
+    {"name":"code", "path":"/code" }
     
 ]

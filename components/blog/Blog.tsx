@@ -12,7 +12,7 @@ export default function BlogLayout({ children, frontMatter }){
       type="article"
     >
       <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
-        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+        <h1 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-5xl">
           {frontMatter.title}
         </h1>
         <div className="flex flex-col items-start justify-between w-full mt-2 md:flex-row md:items-center">
@@ -24,7 +24,7 @@ export default function BlogLayout({ children, frontMatter }){
               src="/img/logo.svg"
               className="rounded-full"
             />
-            <p className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+            <p className="ml-2 text-sm text-gray-700">
               {frontMatter.by}
               {`${info.yourname} / `}
               {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
@@ -34,15 +34,13 @@ export default function BlogLayout({ children, frontMatter }){
             {frontMatter.readingTime.text}
           </p>
         </div>
-        <div className="w-full prose dark:prose-dark max-w-none">
+        <div className="w-full prose prose-blue max-w-none">
           {children}
         </div>
-        <hr/>
-        <div className="flex min-w-full min-h-full">
-        </div>
       </article>
+      <hr/>
+      <Comments issueMap='issue-term' issueTerm='pathname' repo={info.repo} theme='github-light' label={info.label} />
     </PageContent>
-    <Comments issueMap='issue-term' issueTerm='pathname' repo={info.repo} theme='github-light' label={info.label} />
     </>
   );
 }
