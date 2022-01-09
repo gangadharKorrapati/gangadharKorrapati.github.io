@@ -8,7 +8,7 @@ const Experience = () => {
 
                 <Context name="experience">  
 
-                <ContextItem title="Jul 2019 - Nov 2020" duration="Software Developer" location="Back-end, TCS Yantra Park (Thane, Mumbai)">                
+                <ContextItem duration="Jul 2019 - Nov 2020" title="Software Developer" location="Back-end, TCS Yantra Park (Thane, Mumbai)">                
                         
                         <p className="pb-2">
                             <b className="bkpi">Work: </b>
