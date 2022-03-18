@@ -33,12 +33,12 @@ const Education = (printPreview) => {
                         <li><a target="_blank" href="https://www.udemy.com/certificate/UC-28PHKCJX/" className="alink">web development certification udemy</a>
                         </li>                        <li><a target="_blank" href="https://www.cybrary.it/verify-certificate/" className="alink">cryptography certification from cybraby </a>with Number SC-471a1d783-90916</li>
                     </ul>
-                    
+                    {/*
                     <p><b className="bkpi">GATE Rank: </b><a target="_blank" href="/gate.pdf" className="alink">3044</a></p>
                     <p><b className="bkpi">CGPA: </b>7.86/10</p>
-                
+                    */}
                 </ContextItem>
-                
+                {/*
                 <ContextItem duration="Jun 2013 - May 2015" title="MPC, Intermediate Telangana State Board" location="Narayana Jr.College (Hyderabad)" >
                     
                     <p><b className="bkpi">JEE Score: </b>170/360</p>
@@ -52,7 +52,7 @@ const Education = (printPreview) => {
                     <p><b className="bkpi">GPA: </b>9.7/10</p>
 
                 </ContextItem>
-
+                */}
                 </Context>
             </>
     )
