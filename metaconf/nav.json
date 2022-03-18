@@ -1,7 +1,5 @@
 [
     {"name":"home", "path":"/" },
     {"name":"about", "path":"/about" },
-    {"name":"blog", "path":"/blog" },
-    {"name":"code", "path":"/code" }
-    
+    {"name":"code", "path":"https://github.com/gangadharKorrapati/" }    
 ]
