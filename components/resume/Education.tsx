@@ -6,8 +6,10 @@ const Education = (printPreview) => {
     return (
             <>
                 <Context name="education">
+                <ContextItem duration="Jan 2022 - Now" title="M.S Computer Science" location="Binghamton University (Binghamton,N.Y)" >
+                    <p>As part of Databases Course Created an application for student course registration using Oracle PL/SQL,Java and tailwindcss</p>
+                </ContextItem>
                 <ContextItem duration="Jul 2015 - May 2019" title="B.Tech, Computer Science and Engineering" location="SASTRA University (Thanjavur)" >
-                    
                     <p><b className="bkpi">Project: </b> Cloud Based Big Data Solutions for Autonomous Vehicles and Advanced Driver Assistant Systems</p>
                     <ul className="lidec">
                         <li>Autonomous vehilcle data of several hundred GBs in Rosbag and MDF4(Measurement data Format) formats is parsed in Hadoop cluster using pyspark</li>
