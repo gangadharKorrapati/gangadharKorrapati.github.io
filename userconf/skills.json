@@ -11,7 +11,8 @@
       "type": "Databases",
       "keywords": [
         "PostgreSQL",
-        "Redis"
+        "Redis",
+        "PL/SQL"
       ]
     },
     {
@@ -20,7 +21,7 @@
         "pandas",
         "SciPy & Numpy",
         "Apache Zeppelin & Pyspark",
-        "Jupyte notebook & Matplotlib"
+        "Jupyter notebook & Matplotlib"
       ]
     },
     {
@@ -45,8 +46,7 @@
       "type": "Cloud",
       "keywords": [
         "AWS",
-        "Digital Ocean",
-        "Heroku"
+        "Digital Ocean"
       ]
     }
   ]
